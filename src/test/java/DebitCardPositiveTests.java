@@ -1,13 +1,9 @@
-import dev.failsafe.internal.util.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.util.List;
 
 public class DebitCardPositiveTests {
 
@@ -15,7 +11,6 @@ public class DebitCardPositiveTests {
 
     @BeforeAll
     public static void setupAll() {
-        //System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
         WebDriverManager.chromedriver().setup();
     }
 
